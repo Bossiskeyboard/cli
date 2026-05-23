@@ -148,7 +148,7 @@ func getDefaultConfig() *ini.File {
 		section, err := cfg.NewSection(sectionName)
 		if err != nil {
 			panic(err)
-		}
+		}$HOME/.local/share/flatpak/app/com.spotify.Client/x86_64/beta/active/files/extra/share/spotify/
 		for keyName, defaultValue := range keyList {
 			section.NewKey(keyName, defaultValue)
 		}
@@ -309,6 +309,7 @@ func linuxApp() string {
 		"/usr/libexec/spotify/",
 		"/usr/share/spotify-client/",
 		"/var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/",
+		"$HOME/.local/share/flatpak/app/com.spotify.Client/x86_64/beta/active/files/extra/share/spotify/",
 		"$HOME/.local/share/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/",
 		"$HOME/.local/share/spotify-launcher/install/usr/share/spotify/",
 	}
